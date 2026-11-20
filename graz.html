@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="rus">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Грязнульки</title>
+  </head>
+  <body bgcolor="gray">
+    <h1 align="center"><font color="Red">ТУТ ГРЯЗНУЛЬКИ</font></h1>
+    <button
+      id="music-btn"
+      onclick="toggleMusic()"
+      style="
+        background-color: #27043f;
+        color: #690738;
+        border: none;
+        border-radius: 12px;
+        font-size: 20px;
+        padding: 15px 30px;
+        cursor: pointer;
+        margin-top: 20px;
+        margin-left: 800px;
+      "
+    >
+      Включить музыку
+    </button>
+    <audio id="bg-music" src="aero.mp3" loop></audio>
+
+    <script>
+      function toggleMusic() {
+        const audio = document.getElementById("bg-music");
+        const btn = document.getElementById("music-btn");
+
+        if (audio.paused) {
+          audio.play();
+          btn.textContent = "Пауза";
+        } else {
+          audio.pause();
+          btn.textContent = "Включить музыку";
+        }
+      }
+    </script>
+    <br /><br /><br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1>
+      <font color="red"><a href="garazn.html">НАПИСАТЬ ГРЯЗНУЛЬКЕ</a></font>
+    </h1>
+    <img
+      src="https://i.pinimg.com/736x/16/c3/01/16c301dfddd8f1b5cc37e47701cb1b8c.jpg"
+      width="400"
+      height="400"
+    />
+    <br />
+    <br /><br />\
+    <h1>
+      <font color="red"><a href="garazn.html">НАПИСАТЬ ГРЯЗНУЛЬКЕ</a></font>
+    </h1>
+    <img
+      src="https://i.pinimg.com/736x/68/ad/f9/68adf9be7f6a39a6eae8ab52a53ac76e.jpg"
+      width="400"
+      height="400"
+    />
+  </body>
+</html>

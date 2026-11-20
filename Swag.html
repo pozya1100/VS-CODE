@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ГАЗЯВА</title>
+  </head>
+  <body bgcolor="#4B0082">
+    <h1 align="center">
+      <font color="red" size="500">WELCOME TO ГАЗЯВА</font>
+    </h1>
+    <p align="center">
+      <font color="red" size 900>Тут ты обретешь свободу всего</font>
+    </p>
+    <button
+      id="music-btn"
+      onclick="toggleMusic()"
+      style="
+        background-color: #27043f;
+        color: #690738;
+        border: none;
+        border-radius: 12px;
+        font-size: 20px;
+        padding: 15px 30px;
+        cursor: pointer;
+        margin-top: 20px;
+        margin-left: 800px;
+      "
+    >
+      Включить музыку
+    </button>
+    <audio id="bg-music" src="audio.mp3.mp3" loop></audio>
+
+    <script>
+      function toggleMusic() {
+        const audio = document.getElementById("bg-music");
+        const btn = document.getElementById("music-btn");
+
+        if (audio.paused) {
+          audio.play();
+          btn.textContent = "Пауза";
+        } else {
+          audio.pause();
+          btn.textContent = "Включить музыку";
+        }
+      }
+    </script>
+    <img
+      align="right"
+      src="https://i.pinimg.com/736x/08/88/e3/0888e3f28bfc9c5a0b1e9602d83c8023.jpg"
+      width="300"
+      height="300"
+    />
+    <br /><br /><br /><br /><br /><br />
+    <p align="right">
+      <a href="graz.html"
+        ><font color="#50f2f7" size="50"
+          >ГРЯЗНУЛЬКИ ТУТ
+          <br />
+          <font size="20">жми</font>
+        </font></a
+      >
+      <img
+        align="left"
+        src="https://i1.sndcdn.com/artworks-sGtbMyAPpL24dYip-mfBXYQ-t500x500.jpg"
+        width="300"
+        height="300"
+      />
+    </p>
+
+    <h1>
+      <a href="GAZYAVA.html"
+        ><font color="#50f2f7" size="50">ГАЗЯВКА ТУТ</font></a
+      >
+      <br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </h1>
+  </body>
+</html>
